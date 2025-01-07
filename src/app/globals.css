@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global */
+body {
+  direction: rtl;
+}
+
+/* buttons */
+.button-submit {
+  @apply w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
+
+/* links */
+.user-link {
+  @apply text-sm text-indigo-600 hover:text-indigo-800 font-medium;
+}
+/* BG */
+.from-coral-to-magenta{
+  @apply bg-gradient-to-br from-green-400 to-blue-600
+}
+
+/* animathion */
+.grow-ease{
+  @apply transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 
+}
+
+.paging{
+  @apply mb-[10vh]
+}
+
+.bg-checkered-pattern {
+  background-image: linear-gradient(45deg, #f1f1f1 25%, transparent 25%, transparent 75%, #f1f1f1 75%, #f1f1f1),
+                    linear-gradient(45deg, #f1f1f1 25%, transparent 25%, transparent 75%, #f1f1f1 75%, #f1f1f1);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+.rtl-tabs .ant-tabs-nav {
+  flex-direction: row-reverse;
+  /* gap: 32px;  מרווח בין הטאבים */
+}
+
+.rtl-tabs .ant-tabs-nav-list {
+  /* flex-direction: row-reverse; */
+  gap: 32px;  /* מרווח בין הטאבים */
+}
+
+.rtl-tabs .ant-tabs-tab {
+  margin: 0 !important;  /* מבטל את ברירת המחדל של המרווחי*/
+}
+
+.rtl-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rtl-tabs .ant-tabs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rtl-tabs .ant-tabs-content-holder {
+  flex: 1;
+  overflow: hidden;
+}
+
+.rtl-tabs .ant-tabs-content {
+  height: 100%;
+}
+
+.rtl-tabs .ant-tabs-tabpane {
+  height: 100%;
+}
+
+.tab-content {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 2px; /* מרווח לסרגל גלילה */
+}
+
+/* סגנון סרגל הגלילה */
+.tab-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tab-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.tab-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+.ant-picker-calendar .ant-picker-content thead {
+  text-align: center;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* רוחב scrollbar אנכי */
+  height: 4px; /* גובה scrollbar אופקי */
+}
+
+
+
+
+
+
+
+
